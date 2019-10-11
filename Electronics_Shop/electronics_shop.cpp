@@ -31,42 +31,38 @@ int main( ){
  	  cout<< USB[j]<<" ";	
    }
    cout<<endl;*///
-   bubble_sort(keyboard, n);
-   bubble_sort(USB, m);
+   //bubble_sort(keyboard, n);
+   //bubble_sort(USB, m);
    /*cout<<"Keyboard prices(sort check):"<<endl; //
    print_array(keyboard, n);
    cout<<"USB prices(sort check):"<<endl;
    print_array(USB, m); *///
    int sum_i=0, sum_f=0;
-   if(keyboard[0]>=USB[0]){
+   //if(keyboard[0]>=USB[0]){
    	for(i=0;i<n;i++){
- 	  	for(j=0;j<m;j++){
+ 	  	   for(j=0;j<m;j++){
    			sum_i=keyboard[i]+USB[j];      
-   			if(sum_i<=s){
+   			if(sum_i<=s && sum_i>sum_f){
    				sum_f=sum_i;
-   				break;
    			}	
-   		}
-   	    if(sum_i==sum_f){
-   			break;
-   	    }	
+   	   }	
    	}
-   }
-   if(keyboard[0]<USB[0]){
-   	for(i=0;i<n;i++){
- 	  	for(j=0;j<m;j++){
+   //}
+   /*if(keyboard[0]<USB[0]){
+   	for(i=0;i<m;i++){
+ 	  	   for(j=0;j<n;j++){
    			sum_i=USB[i]+keyboard[j];       
    			if(sum_i<=s){
    				sum_f=sum_i;
    				break;
    			}	
    		}
-   	    if(sum_i==sum_f){
+   	   if(sum_i==sum_f){
    			break;
-   	    }	
-   	}
-   }
-   if (sum_i!=sum_f){
+         }  
+   	}	
+   }*/
+   if (sum_f==0){
    		cout<<"-1"<<endl;
    		return -1;
    	}
@@ -75,7 +71,7 @@ int main( ){
    return 0;
 }
 
-void bubble_sort(int arr[], int n){
+/*void bubble_sort(int arr[], int n){
 	int i,j,t;
 	for(i=0;i<n;i++){
 		for(j=0;j<n-1-i;j++){
@@ -86,7 +82,7 @@ void bubble_sort(int arr[], int n){
 			}
 		}
 	}
-}
+}*/
 
 /*void print_array(int arr[], int n){
 	int i;
