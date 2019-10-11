@@ -64,10 +64,11 @@ int main( ){
    }*/
    if (sum_f==0){
    		cout<<"-1"<<endl;
-   		return -1;
-   	}
+   }
    //cout<<"The amount of money you can spend:"<<sum_f<<endl;
-   cout<<sum_f;
+   else{
+      cout<<sum_f;
+   }   
    return 0;
 }
 
