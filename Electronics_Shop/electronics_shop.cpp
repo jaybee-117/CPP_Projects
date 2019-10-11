@@ -67,7 +67,7 @@ int main( ){
    		return -1;
    	}
    //cout<<"The amount of money you can spend:"<<sum_f<<endl;
-   cout<<sum_f<<endl;
+   cout<<sum_f;
    return 0;
 }
 
